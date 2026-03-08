@@ -1,1 +1,17 @@
+# Core dependencies
 watchdog>=4.0.0
+
+# Gmail Watcher (Silver Tier)
+google-auth>=2.0.0
+google-auth-oauthlib>=1.0.0
+google-auth-httplib2>=0.1.0
+google-api-python-client>=2.0.0
+
+# WhatsApp Watcher (Silver Tier) - Optional
+playwright>=1.40.0
+
+# Social Media Posting (Silver Tier) - Optional
+# Install MCP servers via npm:
+# npm install -g @anthropic/gmail-mcp
+# npm install -g @linkedin/mcp-server
+# npm install -g @twitter/mcp-server
