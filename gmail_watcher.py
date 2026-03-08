@@ -360,9 +360,9 @@ def main():
         print("3. Browser will open for authorization")
         print()
         if watcher.authenticate():
-            print("✅ Authentication successful!")
+            print("[OK] Authentication successful!")
         else:
-            print("❌ Authentication failed!")
+            print("[ERROR] Authentication failed!")
     else:
         watcher.run()
 

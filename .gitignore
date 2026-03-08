@@ -25,7 +25,6 @@ wheels/
 
 # Credentials and Secrets
 credentials.json
-credentails.json
 token.json
 .env
 .env.local
