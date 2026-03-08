@@ -10,3 +10,47 @@
 2026-02-20 23:18:27,929 - FileSystemWatcher - INFO - Monitoring folder: /home/raofaizan/Projects/Personal AI Employe /Drop_Folder
 2026-02-20 23:18:27,929 - FileSystemWatcher - INFO - Vault path: /home/raofaizan/Projects/Personal AI Employe 
 2026-02-20 23:18:27,929 - FileSystemWatcher - INFO - Press Ctrl+C to stop the watcher
+2026-03-08 20:29:08,948 - FileSystemWatcher - INFO - Starting file system watcher...
+2026-03-08 20:29:08,948 - FileSystemWatcher - INFO - Monitoring folder: C:\Users\Rao Faizan\Documents\GitHub\Personal-AI-Employe\Drop_Folder
+2026-03-08 20:29:08,948 - FileSystemWatcher - INFO - Vault path: C:\Users\Rao Faizan\Documents\GitHub\Personal-AI-Employe
+2026-03-08 20:29:08,948 - FileSystemWatcher - INFO - Press Ctrl+C to stop the watcher
+2026-03-08 20:33:21,462 - FileSystemWatcher - INFO - File modified: another_test.txt
+2026-03-08 20:33:21,527 - FileSystemWatcher - INFO - Created action file: FILE_DROP_2026-03-08_20-33-21_another_test.md
+2026-03-08 20:33:22,528 - FileSystemWatcher - INFO - File modified: test_document.txt
+2026-03-08 20:33:22,545 - FileSystemWatcher - INFO - Created action file: FILE_DROP_2026-03-08_20-33-22_test_document.md
+2026-03-08 20:33:23,547 - FileSystemWatcher - INFO - File modified: test_setup.txt
+2026-03-08 20:33:23,551 - FileSystemWatcher - INFO - Created action file: FILE_DROP_2026-03-08_20-33-23_test_setup.md
+2026-03-08 20:33:24,555 - FileSystemWatcher - INFO - File modified: watcher_test.txt
+2026-03-08 20:33:24,557 - FileSystemWatcher - INFO - Created action file: FILE_DROP_2026-03-08_20-33-24_watcher_test.md
+2026-03-08 20:35:41,270 - FileSystemWatcher - INFO - New file detected: test_input.txt
+2026-03-08 20:35:41,273 - FileSystemWatcher - INFO - Created action file: FILE_DROP_2026-03-08_20-35-41_test_input.md
+2026-03-08 20:35:42,275 - FileSystemWatcher - INFO - File modified: test_input.txt
+2026-03-08 20:35:42,279 - FileSystemWatcher - INFO - Created action file: FILE_DROP_2026-03-08_20-35-42_test_input.md
+2026-03-08 20:36:00,531 - FileSystemWatcher - INFO - File modified: test_input.txt
+2026-03-08 20:36:00,535 - FileSystemWatcher - INFO - Created action file: FILE_DROP_2026-03-08_20-36-00_test_input.md
+2026-03-08 20:36:01,541 - FileSystemWatcher - INFO - File modified: test_input.txt
+2026-03-08 20:36:01,542 - FileSystemWatcher - INFO - Created action file: FILE_DROP_2026-03-08_20-36-01_test_input.md
+2026-03-08 20:39:00,609 - FileSystemWatcher - INFO - Starting file system watcher...
+2026-03-08 20:39:00,610 - FileSystemWatcher - INFO - Monitoring folder: C:\Users\Rao Faizan\Documents\GitHub\Personal-AI-Employe\Drop_Folder
+2026-03-08 20:39:00,610 - FileSystemWatcher - INFO - Vault path: C:\Users\Rao Faizan\Documents\GitHub\Personal-AI-Employe
+2026-03-08 20:39:00,610 - FileSystemWatcher - INFO - Press Ctrl+C to stop the watcher
+2026-03-08 20:39:46,851 - FileSystemWatcher - INFO - New file detected: hello.md
+2026-03-08 20:39:46,855 - FileSystemWatcher - INFO - Created action file: FILE_DROP_2026-03-08_20-39-46_hello.md
+2026-03-08 20:39:46,916 - FileSystemWatcher - INFO - Created action file: FILE_DROP_2026-03-08_20-39-46_hello.md
+2026-03-08 20:39:47,858 - FileSystemWatcher - INFO - File modified: hello.md
+2026-03-08 20:39:47,860 - FileSystemWatcher - INFO - Created action file: FILE_DROP_2026-03-08_20-39-47_hello.md
+2026-03-08 20:39:47,918 - FileSystemWatcher - INFO - File modified: hello.md
+2026-03-08 20:39:47,921 - FileSystemWatcher - INFO - Created action file: FILE_DROP_2026-03-08_20-39-47_hello.md
+2026-03-08 20:50:54,617 - FileSystemWatcher - INFO - File system watcher stopped.
+2026-03-08 20:51:17,152 - FileSystemWatcher - INFO - Starting file system watcher...
+2026-03-08 20:51:17,153 - FileSystemWatcher - INFO - Monitoring folder: C:\Users\Rao Faizan\Documents\GitHub\Personal-AI-Employe\Drop_Folder
+2026-03-08 20:51:17,153 - FileSystemWatcher - INFO - Vault path: C:\Users\Rao Faizan\Documents\GitHub\Personal-AI-Employe
+2026-03-08 20:51:17,153 - FileSystemWatcher - INFO - Press Ctrl+C to stop the watcher
+2026-03-08 20:54:19,039 - FileSystemWatcher - INFO - New file detected: test_file.txt
+2026-03-08 20:54:19,039 - FileSystemWatcher - INFO - New file detected: test_file.txt
+2026-03-08 20:54:19,042 - FileSystemWatcher - INFO - Created action file: FILE_DROP_2026-03-08_20-54-19_test_file.md
+2026-03-08 20:54:19,108 - FileSystemWatcher - INFO - Created action file: FILE_DROP_2026-03-08_20-54-19_test_file.md
+2026-03-08 20:54:20,045 - FileSystemWatcher - INFO - File modified: test_file.txt
+2026-03-08 20:54:20,047 - FileSystemWatcher - INFO - Created action file: FILE_DROP_2026-03-08_20-54-20_test_file.md
+2026-03-08 20:54:20,110 - FileSystemWatcher - INFO - File modified: test_file.txt
+2026-03-08 20:54:20,111 - FileSystemWatcher - INFO - Created action file: FILE_DROP_2026-03-08_20-54-20_test_file.md

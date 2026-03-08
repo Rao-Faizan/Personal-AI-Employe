@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7ec409e7ff51732e",
+        "id": "e698684a8ed447ec",
         "type": "tabs",
         "children": [
           {
-            "id": "0d34a5f85ce4abb7",
+            "id": "c2b9b511821df2c2",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -183,18 +183,43 @@
       "bases:Create new base": false
     }
   },
-  "active": "0d34a5f85ce4abb7",
+  "active": "c2b9b511821df2c2",
   "lastOpenFiles": [
-    "Personal AI Employee Hackathon 0_ Building Autonomous FTEs in 2026.md",
-    "README.md",
-    "Untitled.base",
+    "Done/PLAN_2026-03-08_20-33-21_another_test_20260308_203709.md",
     "Dashboard.md",
-    "Drop_Folder/watcher_test.txt",
-    "Business_Goals.md",
-    "Drop_Folder/another_test.txt",
-    "watcher.log",
-    "Untitled.md",
-    "send email.md",
-    "Company_Handbook.md"
+    "Needs_Action/FILE_DROP_2026-03-08_20-39-47_hello.md",
+    "Plans/PLAN_2026-03-08_20-54-20_test_file_20260308_205534.md",
+    "Plans/PLAN_2026-03-08_20-54-19_test_file_20260308_205534.md",
+    "Plans/PLAN_2026-03-08_20-39-47_hello_20260308_205534.md",
+    "Plans/PLAN_2026-03-08_20-39-46_hello_20260308_205534.md",
+    "Plans/PLAN_2026-03-08_20-36-01_test_input_20260308_205534.md",
+    "Plans/PLAN_2026-03-08_20-36-00_test_input_20260308_205534.md",
+    "Plans/PLAN_2026-03-08_20-35-42_test_input_20260308_205534.md",
+    "Plans/PLAN_2026-03-08_20-35-41_test_input_20260308_205534.md",
+    "Plans/PLAN_2026-03-08_20-33-24_watcher_test_20260308_205534.md",
+    "Plans/PLAN_2026-03-08_20-33-23_test_setup_20260308_205534.md",
+    "Plans/PLAN_2026-03-08_20-33-22_test_document_20260308_205534.md",
+    "Needs_Action/FILE_DROP_2026-03-08_20-54-20_test_file.md",
+    "Needs_Action/FILE_DROP_2026-03-08_20-54-19_test_file.md",
+    "Inbox/NEW_test_file.txt",
+    "Drop_Folder/test_file.txt",
+    "Needs_Action/FILE_DROP_2026-03-08_20-35-41_test_input.md",
+    "Needs_Action/FILE_DROP_2026-03-08_20-33-21_another_test.md",
+    "Plans/PLAN_2026-03-08_20-33-22_test_document_20260308_203709.md",
+    "Inbox/faizan.md",
+    "faizan.md",
+    "Inbox/hello.md",
+    "Needs_Action/FILE_DROP_2026-03-08_20-33-24_watcher_test.md",
+    "Inbox/NEW_hello.md",
+    "Company_Handbook.md",
+    "Drop_Folder/hello.md",
+    "Pending_Approval",
+    "Inbox/NEW_test_input.txt",
+    "Drop_Folder/test_input.txt",
+    "__pycache__/orchestrator.cpython-314.pyc",
+    "__pycache__/filesystem_watcher.cpython-314.pyc",
+    "__pycache__",
+    "Logs",
+    "Plans/Pending_Approval"
   ]
 }
