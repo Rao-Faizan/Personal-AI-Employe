@@ -85,8 +85,12 @@ class AI_Employee_Orchestrator:
 
     def create_plan_for_action(self, action_file: Path):
         """Create a plan file for the given action."""
-        # Read the action file to get details (with UTF-8 encoding)
-        content = action_file.read_text(encoding='utf-8')
+        # Read the action file to get details (with encoding fallback)
+        try:
+            content = action_file.read_text(encoding='utf-8')
+        except UnicodeDecodeError:
+            # Fallback to default encoding (cp1252 on Windows)
+            content = action_file.read_text()
 
         # Create a plan file name based on the action
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
