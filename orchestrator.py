@@ -7,17 +7,24 @@ managing the various components and workflows.
 """
 
 import os
+import sys
 import time
 import logging
+import codecs
 from pathlib import Path
 from datetime import datetime
+
+# Fix Windows console encoding
+if sys.platform == 'win32':
+    sys.stdout = codecs.getwriter('utf-8')(sys.stdout.buffer, errors='replace')
+    sys.stderr = codecs.getwriter('utf-8')(sys.stderr.buffer, errors='replace')
 
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('orchestrator.log'),
+        logging.FileHandler('orchestrator.log', encoding='utf-8'),
         logging.StreamHandler()
     ]
 )
@@ -78,8 +85,8 @@ class AI_Employee_Orchestrator:
 
     def create_plan_for_action(self, action_file: Path):
         """Create a plan file for the given action."""
-        # Read the action file to get details
-        content = action_file.read_text()
+        # Read the action file to get details (with UTF-8 encoding)
+        content = action_file.read_text(encoding='utf-8')
 
         # Create a plan file name based on the action
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -112,8 +119,8 @@ Content of original action file:
 {content[:500]}...  # First 500 characters of original file
 """
 
-        # Write the plan file
-        plan_path.write_text(plan_content)
+        # Write the plan file (with UTF-8 encoding)
+        plan_path.write_text(plan_content, encoding='utf-8')
         logger.info(f"Created plan file: {plan_path.name}")
 
     def move_to_done(self, file_path: Path):
@@ -140,8 +147,8 @@ Content of original action file:
         needs_action_count = len(list(self.folders['needs_action'].glob('*')))
         done_count = len(list(self.folders['done'].glob('*')))
 
-        # Read current dashboard content
-        content = dashboard_path.read_text()
+        # Read current dashboard content (with UTF-8 encoding)
+        content = dashboard_path.read_text(encoding='utf-8')
 
         # Update stats section
         lines = content.split('\n')
@@ -162,8 +169,8 @@ Content of original action file:
             else:
                 new_lines.append(line)
 
-        # Write updated content
-        dashboard_path.write_text('\n'.join(new_lines))
+        # Write updated content (with UTF-8 encoding)
+        dashboard_path.write_text('\n'.join(new_lines), encoding='utf-8')
         logger.info("Dashboard updated")
 
     def run_once(self):
