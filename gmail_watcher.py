@@ -16,6 +16,7 @@ Usage:
 """
 
 import os
+import sys
 import time
 import logging
 import base64
@@ -28,19 +29,25 @@ from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
+# Fix Windows console encoding
+if sys.platform == 'win32':
+    import codecs
+    sys.stdout = codecs.getwriter('utf-8')(sys.stdout.buffer, errors='replace')
+    sys.stderr = codecs.getwriter('utf-8')(sys.stderr.buffer, errors='replace')
+
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('gmail_watcher.log'),
+        logging.FileHandler('gmail_watcher.log', encoding='utf-8'),
         logging.StreamHandler()
     ]
 )
 logger = logging.getLogger('GmailWatcher')
 
 # Gmail API scopes
-SCOPES = ['https://www.googleapis.com/auth/gmail_readonly']
+SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
 
 class GmailWatcher:
     """Monitor Gmail for new messages and create action files."""
@@ -81,7 +88,7 @@ class GmailWatcher:
         ids_list = list(self.processed_ids)[-1000:]
         cache_file.write_text(json.dumps({'processed_ids': ids_list, 'updated': datetime.now().isoformat()}))
 
-    def authenticate(self):
+    def authenticate(self, port: int = 8080):
         """Perform OAuth2 authentication flow."""
         creds = None
         
@@ -98,7 +105,7 @@ class GmailWatcher:
                     logger.error("credentials.json not found! Download from Google Cloud Console.")
                     return False
                 flow = InstalledAppFlow.from_client_secrets_file(self.credentials_file, SCOPES)
-                creds = flow.run_local_server(port=8080)
+                creds = flow.run_local_server(port=port)
             
             # Save token
             self.token_file.write_text(creds.to_json())
@@ -343,23 +350,25 @@ Add context or response strategy here.
 def main():
     """Main entry point."""
     import argparse
-    
+
     parser = argparse.ArgumentParser(description='Gmail Watcher for AI Employee')
     parser.add_argument('--auth', action='store_true', help='Run authentication flow')
     parser.add_argument('--vault', default='.', help='Path to Obsidian vault')
     parser.add_argument('--interval', type=int, default=120, help='Check interval in seconds')
-    
+    parser.add_argument('--port', type=int, default=8080, help='Port for OAuth callback (default: 8080)')
+
     args = parser.parse_args()
-    
+
     watcher = GmailWatcher(vault_path=args.vault, check_interval=args.interval)
-    
+
     if args.auth:
         print("Starting Gmail authentication flow...")
         print("1. Download credentials.json from Google Cloud Console")
         print("2. Place it in this directory")
         print("3. Browser will open for authorization")
+        print(f"   Using port: {args.port}")
         print()
-        if watcher.authenticate():
+        if watcher.authenticate(port=args.port):
             print("[OK] Authentication successful!")
         else:
             print("[ERROR] Authentication failed!")
