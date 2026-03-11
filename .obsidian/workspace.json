@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e698684a8ed447ec",
+        "id": "db383766c4dea8c3",
         "type": "tabs",
         "children": [
           {
-            "id": "c2b9b511821df2c2",
+            "id": "55b09f2e0f60fd33",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dashboard.md",
+                "file": "Dashboard_Gold.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Dashboard"
+              "title": "Dashboard_Gold"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Pending_Approval/SOCIAL_LINKEDIN_2026-03-11_19-58-05.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for README"
+              "title": "Backlinks for SOCIAL_LINKEDIN_2026-03-11_19-58-05"
             }
           },
           {
@@ -164,13 +164,25 @@
               "icon": "lucide-list",
               "title": "Outline of README"
             }
+          },
+          {
+            "id": "71196efa6a927271",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "Dashboard_Gold.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for Dashboard_Gold"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,43 +195,47 @@
       "bases:Create new base": false
     }
   },
-  "active": "c2b9b511821df2c2",
+  "active": "55b09f2e0f60fd33",
   "lastOpenFiles": [
-    "Done/PLAN_2026-03-08_20-33-21_another_test_20260308_203709.md",
+    "linkedin_success.png",
+    "linkedin_corrected.log",
+    "linkedin_poster_corrected.py",
+    "linkedin_final_working.py",
+    "linkedin_click_only.py",
+    "test_twitter_simple.py",
+    "linkedin_button_click.py",
+    "linkedin_helper.log",
+    "linkedin_helper.py",
+    "linkedin_post_result.png",
+    "linkedin_auto.log",
+    "linkedin_auto.py",
+    "linkedin_error.png",
+    "linkedin_after_click.png",
+    "Pending_Approval/SOCIAL_LINKEDIN_2026-03-11_23-50-02.md",
+    "linkedin_posted.png",
     "Dashboard.md",
-    "Needs_Action/FILE_DROP_2026-03-08_20-39-47_hello.md",
-    "Plans/PLAN_2026-03-08_20-54-20_test_file_20260308_205534.md",
-    "Plans/PLAN_2026-03-08_20-54-19_test_file_20260308_205534.md",
-    "Plans/PLAN_2026-03-08_20-39-47_hello_20260308_205534.md",
-    "Plans/PLAN_2026-03-08_20-39-46_hello_20260308_205534.md",
-    "Plans/PLAN_2026-03-08_20-36-01_test_input_20260308_205534.md",
-    "Plans/PLAN_2026-03-08_20-36-00_test_input_20260308_205534.md",
-    "Plans/PLAN_2026-03-08_20-35-42_test_input_20260308_205534.md",
-    "Plans/PLAN_2026-03-08_20-35-41_test_input_20260308_205534.md",
-    "Plans/PLAN_2026-03-08_20-33-24_watcher_test_20260308_205534.md",
-    "Plans/PLAN_2026-03-08_20-33-23_test_setup_20260308_205534.md",
-    "Plans/PLAN_2026-03-08_20-33-22_test_document_20260308_205534.md",
-    "Needs_Action/FILE_DROP_2026-03-08_20-54-20_test_file.md",
-    "Needs_Action/FILE_DROP_2026-03-08_20-54-19_test_file.md",
-    "Inbox/NEW_test_file.txt",
-    "Drop_Folder/test_file.txt",
-    "Needs_Action/FILE_DROP_2026-03-08_20-35-41_test_input.md",
-    "Needs_Action/FILE_DROP_2026-03-08_20-33-21_another_test.md",
-    "Plans/PLAN_2026-03-08_20-33-22_test_document_20260308_203709.md",
-    "Inbox/faizan.md",
-    "faizan.md",
-    "Inbox/hello.md",
-    "Needs_Action/FILE_DROP_2026-03-08_20-33-24_watcher_test.md",
-    "Inbox/NEW_hello.md",
     "Company_Handbook.md",
-    "Drop_Folder/hello.md",
-    "Pending_Approval",
-    "Inbox/NEW_test_input.txt",
-    "Drop_Folder/test_input.txt",
-    "__pycache__/orchestrator.cpython-314.pyc",
-    "__pycache__/filesystem_watcher.cpython-314.pyc",
-    "__pycache__",
-    "Logs",
-    "Plans/Pending_Approval"
+    "Business_Goals.md",
+    "Briefings.md",
+    "Pending_Approval/SOCIAL_LINKEDIN_2026-03-11_19-58-05.md",
+    "Dashboard_Gold.md",
+    "Approved/Social/SOCIAL_LINKEDIN_2026-03-11_19-56-51.md",
+    "Done/POSTED_SOCIAL_LINKEDIN_2026-03-11_20-14-55.md",
+    "Done/POSTED_SOCIAL_LINKEDIN_2026-03-11_19-56-51.md",
+    "Approved/Social/SOCIAL_LINKEDIN_2026-03-11_20-14-55.md",
+    "Approved/Social/SOCIAL_TWITTER_2026-03-11_20-00-29.md",
+    "Briefings/2026-03-11_Daily_Briefing.md",
+    "Needs_Action/RALPH_TASK.md",
+    "GOLD_TIER_GUIDE.md",
+    "MODIFIED_test_document.txt.md",
+    "Plans/PLAN_EMAIL_2026-03-09_19-08-09_✅_Rao_Faizan,_finish_setting_u_20260310_150450.md",
+    "Plans/PLAN_EMAIL_2026-03-09_19-07-58_✅_Rao_Faizan,_finish_setting_u_20260310_150450.md",
+    "Plans/PLAN_EMAIL_2026-03-09_19-07-48_✅_Rao_Faizan,_finish_setting_u_20260310_150450.md",
+    "Plans/PLAN_EMAIL_2026-03-09_19-07-37_✅_Rao_Faizan,_finish_setting_u_20260310_150450.md",
+    "Plans/PLAN_EMAIL_2026-03-09_19-07-27_✅_Rao_Faizan,_finish_setting_u_20260310_150450.md",
+    "Plans/PLAN_EMAIL_2026-03-09_19-07-16_✅_Rao_Faizan,_finish_setting_u_20260310_150450.md",
+    "Plans/PLAN_EMAIL_2026-03-09_19-07-06_✅_Rao_Faizan,_finish_setting_u_20260310_150450.md",
+    "Plans/PLAN_EMAIL_2026-03-09_19-06-55_✅_Rao_Faizan,_finish_setting_u_20260310_150450.md",
+    "Plans/PLAN_EMAIL_2026-03-09_19-06-45_✅_Rao_Faizan,_finish_setting_u_20260310_150450.md"
   ]
 }

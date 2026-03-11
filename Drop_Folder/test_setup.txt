@@ -1,7 +1,0 @@
-Test file created at 2026-02-20 23:15:19
-
-This file tests that the file system watcher is working correctly.
-When you run the filesystem_watcher.py, this file should trigger:
-1. Creation of a file in Needs_Action folder
-2. Copy of the file to Inbox folder
-3. Update to the Dashboard

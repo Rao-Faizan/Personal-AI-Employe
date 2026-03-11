@@ -1,2 +1,0 @@
-This is a test file to demonstrate the file system watcher functionality.
-When placed in the Drop_Folder, it should trigger the watcher to create an action file.
