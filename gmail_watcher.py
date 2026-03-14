@@ -29,6 +29,20 @@ from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
+# Retry handler (Gold Tier)
+try:
+    import importlib.util, pathlib
+    _spec = importlib.util.spec_from_file_location(
+        "retry_handler",
+        pathlib.Path(__file__).parent / "scripts" / "retry_handler.py"
+    )
+    _mod = importlib.util.module_from_spec(_spec)
+    _spec.loader.exec_module(_mod)
+    retry_api = _mod.retry_api
+except Exception:
+    def retry_api(func):
+        return func
+
 # Fix Windows console encoding
 if sys.platform == 'win32':
     import codecs
@@ -116,6 +130,7 @@ class GmailWatcher:
         logger.info("Gmail authentication successful")
         return True
 
+    @retry_api
     def check_for_new_emails(self) -> list:
         """Check for new unread important emails."""
         if not self.service:
@@ -140,6 +155,7 @@ class GmailWatcher:
             logger.error(f"Gmail API error: {error}")
             return []
 
+    @retry_api
     def get_message_details(self, message_id: str) -> dict:
         """Fetch full message details."""
         try:

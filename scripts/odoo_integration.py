@@ -31,6 +31,20 @@ from pathlib import Path
 from datetime import datetime
 from typing import Optional, Dict, List
 
+# Retry handler (Gold Tier)
+try:
+    import importlib.util, pathlib
+    _spec = importlib.util.spec_from_file_location(
+        "retry_handler",
+        pathlib.Path(__file__).parent / "retry_handler.py"
+    )
+    _mod = importlib.util.module_from_spec(_spec)
+    _spec.loader.exec_module(_mod)
+    retry_api = _mod.retry_api
+except Exception:
+    def retry_api(func):
+        return func
+
 # Fix Windows console encoding
 if sys.platform == 'win32':
     sys.stdout = codecs.getwriter('utf-8')(sys.stdout.buffer, errors='replace')
@@ -99,6 +113,7 @@ class OdooIntegration:
         self.config_file.write_text(json.dumps(config, indent=2))
         logger.info("Configuration saved")
 
+    @retry_api
     def authenticate(self) -> bool:
         """Authenticate with Odoo and get UID."""
         try:
@@ -136,6 +151,7 @@ class OdooIntegration:
             logger.error(f"Authentication error: {e}")
             return False
 
+    @retry_api
     def execute(self, model: str, method: str, args: List = None, kwargs: Dict = None) -> Optional[Dict]:
         """Execute a method on an Odoo model."""
         if not self.config.get('uid'):
